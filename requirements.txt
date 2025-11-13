@@ -5,4 +5,7 @@ matplotlib
 scikit-learn
 requests
 flask
--e .
+catboost
+xgboost
+lightgbm
+# -e .
