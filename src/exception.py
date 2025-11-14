@@ -7,7 +7,6 @@ def error_message_detail(error, error_detail:sys):
 
     error_message = f"Error occurred in script: [{0}] at line number: [{1}] error message: [{2}]".format(
         file_name, exc_tb.tb_lineno, str(error)
-        return error_message
     )
     return error_message
 
