@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: student-performance-prediction
+    env: docker
+    plan: free
+    region: frankfurt   # or oregon (choose nearest to you)
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
